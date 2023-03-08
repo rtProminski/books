@@ -23,6 +23,7 @@ const BookShow = ({ book, onDelete, onEdit }) => {
 
 	return (
 		<div className="book-show">
+			<img src={`https://picsum.photos/seed/${book.id}/200/300`} alt="random-img" />
 			{content}
 			<div className="actions">
 				<button className="edit" onClick={handleEditClick}>
